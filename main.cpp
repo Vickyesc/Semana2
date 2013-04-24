@@ -4,7 +4,7 @@ and may not be redistributed without written permission.*/
 //The headers
 #include "SDL/SDL.h"
 #include "SDL/SDL_image.h"
-#include "SDL/SDL_ttf.h"
+
 #include "Background.h"
 #include "Player.h"
 #include "Enemy.h"

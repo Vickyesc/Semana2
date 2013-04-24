@@ -83,3 +83,42 @@
 1366189330 /home/turupawn/Projects/CodeBlocks/Progra 3/Ejemplos/SdlRunner/Timer.h
 	"SDL/SDL.h"
 
+1366393826 source:c:\users\dell\documents\github\semana2\background.cpp
+	"Background.h"
+
+1366394165 c:\users\dell\documents\github\semana2\background.h
+	"SDL/SDL.h"
+	"SDL/SDL_image.h"
+	<string>
+
+1366780861 source:c:\users\dell\documents\github\semana2\enemy.cpp
+	"Enemy.h"
+
+1366780928 c:\users\dell\documents\github\semana2\enemy.h
+	"SDL/SDL.h"
+	"SDL/SDL_image.h"
+	<string>
+
+1366780713 source:c:\users\dell\documents\github\semana2\main.cpp
+	"SDL/SDL.h"
+	"SDL/SDL_image.h"
+	"Background.h"
+	"Player.h"
+	"Enemy.h"
+	"Timer.h"
+	<string>
+
+1366778594 c:\users\dell\documents\github\semana2\player.h
+	"SDL/SDL.h"
+	"SDL/SDL_image.h"
+	<string>
+
+1366393826 c:\users\dell\documents\github\semana2\timer.h
+	"SDL/SDL.h"
+
+1366778939 source:c:\users\dell\documents\github\semana2\player.cpp
+	"Player.h"
+
+1366393826 source:c:\users\dell\documents\github\semana2\timer.cpp
+	"Timer.h"
+

@@ -1,28 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="Background.cpp" open="0" top="0" tabpos="3">
-		<Cursor position="298" topLine="0" />
+	<File name="Background.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
 	</File>
-	<File name="Background.h" open="0" top="0" tabpos="2">
-		<Cursor position="43" topLine="1" />
+	<File name="Background.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="272" topLine="0" />
+		</Cursor>
 	</File>
-	<File name="Enemy.cpp" open="0" top="0" tabpos="5">
-		<Cursor position="266" topLine="0" />
+	<File name="Enemy.cpp" open="1" top="1" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="945" topLine="34" />
+		</Cursor>
 	</File>
-	<File name="Enemy.h" open="0" top="0" tabpos="4">
-		<Cursor position="257" topLine="0" />
+	<File name="Enemy.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="249" topLine="7" />
+		</Cursor>
 	</File>
-	<File name="Player.cpp" open="0" top="0" tabpos="7">
-		<Cursor position="301" topLine="1" />
+	<File name="Player.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1186" topLine="45" />
+		</Cursor>
 	</File>
-	<File name="Player.h" open="0" top="0" tabpos="6">
-		<Cursor position="150" topLine="0" />
+	<File name="Player.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="252" topLine="7" />
+		</Cursor>
 	</File>
-	<File name="Timer.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="1398" topLine="0" />
-	</File>
-	<File name="main.cpp" open="0" top="0" tabpos="1">
-		<Cursor position="358" topLine="0" />
+	<File name="main.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2284" topLine="79" />
+		</Cursor>
 	</File>
 </CodeBlocks_layout_file>
