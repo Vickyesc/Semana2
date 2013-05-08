@@ -1,27 +1,30 @@
-#ifndef PLAYER_H
-#define PLAYER_H
-
+#ifndef FIRE_H
+#define FIRE_H
+#include <string>
 #include "SDL/SDL.h"
 #include "SDL/SDL_image.h"
-#include "SDL/SDL_ttf.h"
-#include <string>
 
-class Player
+
+class Fire
 {
-public:
+    public:
+
     int x;
     int y;
     int velocity;
     int acceleration;
     int current_frame;
-    SDL_Surface *images[5];
+    SDL_Surface *images[3];
     SDL_Surface *screen;
 
-    Player(SDL_Surface *screen);
+  Fire(SDL_Surface *screen);
+
     void logic();
     void render();
     void jump();
-    virtual ~Player();
+
+        virtual ~Fire();
+
 };
 
-#endif // PLAYER_H
+#endif // FIRE_H

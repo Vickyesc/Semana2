@@ -86,31 +86,37 @@
 1366393826 source:c:\users\dell\documents\github\semana2\background.cpp
 	"Background.h"
 
-1366394165 c:\users\dell\documents\github\semana2\background.h
+1367962784 c:\users\dell\documents\github\semana2\background.h
 	"SDL/SDL.h"
 	"SDL/SDL_image.h"
+	"SDL/SDL_ttf.h"
 	<string>
 
-1366780861 source:c:\users\dell\documents\github\semana2\enemy.cpp
+1367968579 source:c:\users\dell\documents\github\semana2\enemy.cpp
 	"Enemy.h"
 
-1366780928 c:\users\dell\documents\github\semana2\enemy.h
+1367968579 c:\users\dell\documents\github\semana2\enemy.h
 	"SDL/SDL.h"
 	"SDL/SDL_image.h"
+	"SDL/SDL_ttf.h"
 	<string>
 
-1366780713 source:c:\users\dell\documents\github\semana2\main.cpp
+1367990606 source:c:\users\dell\documents\github\semana2\main.cpp
 	"SDL/SDL.h"
 	"SDL/SDL_image.h"
+	"SDL/SDL_mixer.h"
 	"Background.h"
 	"Player.h"
 	"Enemy.h"
 	"Timer.h"
 	<string>
+	"Fire.h"
+	"Inicio.h"
 
-1366778594 c:\users\dell\documents\github\semana2\player.h
+1367991359 c:\users\dell\documents\github\semana2\player.h
 	"SDL/SDL.h"
 	"SDL/SDL_image.h"
+	"SDL/SDL_ttf.h"
 	<string>
 
 1366393826 c:\users\dell\documents\github\semana2\timer.h
@@ -121,4 +127,21 @@
 
 1366393826 source:c:\users\dell\documents\github\semana2\timer.cpp
 	"Timer.h"
+
+1367986552 source:c:\users\dell\documents\github\semana2\fire.cpp
+	"Fire.h"
+
+1367986400 c:\users\dell\documents\github\semana2\fire.h
+	<string>
+	"SDL/SDL.h"
+	"SDL/SDL_image.h"
+
+1367988324 source:c:\users\dell\documents\github\semana2\inicio.cpp
+	"Inicio.h"
+
+1367988324 c:\users\dell\documents\github\semana2\inicio.h
+	"SDL/SDL.h"
+	"SDL/SDL_image.h"
+	"SDL/SDL_ttf.h"
+	<string>
 

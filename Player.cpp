@@ -33,7 +33,10 @@ void Player::logic()
         y=500-images[current_frame]->w/2;
         velocity=0;
     }
+
+
 }
+
 
 void Player::jump()
 {

@@ -1,23 +1,25 @@
-#ifndef BACKGROUND_H
-#define BACKGROUND_H
+#ifndef INICIO_H
+#define INICIO_H
 
 #include "SDL/SDL.h"
 #include "SDL/SDL_image.h"
 #include "SDL/SDL_ttf.h"
 #include <string>
 
-class Background
+class Inicio
 {
     public:
-        Background(SDL_Surface *screen);
+        Inicio(SDL_Surface *screen);
         void logic();
         void render();
-        virtual ~Background();
+
+        virtual ~Inicio();
     protected:
     private:
-    int x;
+
+        int x;
     SDL_Surface *image;
     SDL_Surface *screen;
 };
 
-#endif // BACKGROUND_H
+#endif // INICIO_H
