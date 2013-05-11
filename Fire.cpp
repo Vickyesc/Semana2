@@ -30,7 +30,7 @@ void Fire::logic(){
 
 void Fire::jump(){
 
-    velocity=-30;
+    velocity=-300;
 }
 
 void Fire::render(){

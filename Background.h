@@ -12,11 +12,14 @@ class Background
         Background(SDL_Surface *screen);
         void logic();
         void render();
+        void setInicio(int i);
+        int getInicio();
+        int numPantalla;
         virtual ~Background();
     protected:
     private:
     int x;
-    SDL_Surface *image;
+    SDL_Surface *background[2];
     SDL_Surface *screen;
 };
 

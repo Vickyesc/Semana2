@@ -12,6 +12,7 @@ and may not be redistributed without written permission.*/
 #include <string>
 #include "Fire.h"
 #include "Inicio.h"
+#include "Cocodrilo.h"
 
 //Screen attributes
 const int SCREEN_WIDTH = 1000;
@@ -87,12 +88,8 @@ int main( int argc, char* args[] )
     update=new Timer();
     update->start();
 
-    int nota=0;
-    int muerte = 0 ;
 
-
-    SDL_Surface * explosion= IMG_Load( "perder04.png" );
-    SDL_Surface * game_over = IMG_Load( "game_over.png" );
+ SDL_Surface * game_over = IMG_Load( "game_over.png" );
 
 
     TTF_Font *font = TTF_OpenFont( "lazy.ttf", 30 );
@@ -106,10 +103,13 @@ int main( int argc, char* args[] )
     Mix_Music *music = NULL;
 
 
+
     Background background(screen);
+    background.setInicio(0);
     Player player(screen);
     Enemy enemy(screen);
     Fire fire(screen);
+    Cocodrilo cocodrilo(screen);
 
     SDL_Event event;
     //Quit flag
@@ -138,10 +138,14 @@ int main( int argc, char* args[] )
                 switch( event.key.keysym.sym )
                 {
                     case SDLK_ESCAPE: quit = true; break;
+                    case SDLK_1:
+                        background.setInicio(1);
+
+                        break;
+
                     case SDLK_UP:
-
-
-                          player.jump();
+                            if(! player.isJump)
+                                player.jump();
 
 
                         break;
@@ -156,43 +160,63 @@ int main( int argc, char* args[] )
             }
         }
 
+        int random;
+
         background.logic();
-        player.logic();
-        enemy.logic();
-        fire.logic();
+
+        if(background.getInicio()==1){
+             player.logic();
+
+             random= rand()%3;
+
+             if(random==0)
+                enemy.logic();
+             if(random==1)
+                fire.logic();
+             if (random==2);
+                cocodrilo.logic();
+
+                player.choco(enemy.x,enemy.y);
+                player.choco(fire.x,fire.y);
+                player.choco(cocodrilo.x,cocodrilo.y);
 
 
-        SDL_Rect offset;
+        }
+
+
+
+     /*   SDL_Rect offset;
         offset.x = 0;
         offset.y = 0;
         int score;
         SDL_Surface * score_surface = TTF_RenderText_Solid( font, toString(score+=5).c_str(), textColor );
         SDL_BlitSurface( score_surface, NULL, screen, &offset );
         SDL_Flip( screen );
-        SDL_FreeSurface( score_surface );
+        SDL_FreeSurface( score_surface );*/
 
-        if(player.x-enemy.x<50
-           && player.x-enemy.x>-50
-           && player.y-enemy.y<50
-           && player.y-enemy.y>-50
-           )
-        {
-           break;
-        }
 
-        if(player.x-fire.x<50
-           && player.x-fire.x>-50
-           && player.y-fire.y<50
-           && player.y-fire.y>-50
-           )
-        {
-           break;
-        }
 
         background.render();
-        player.render();
-        enemy.render();
-        fire.render();
+
+       if(background.getInicio()==1){
+             player.render();
+
+                 if(random==0)
+                    enemy.render();
+                if(random==1)
+                    fire.render();
+                if (random==2);
+                    cocodrilo.render();
+
+
+                if(player.seMurio){
+
+                   break;
+                }
+
+       }
+
+
 
         frameCap();
 
@@ -216,6 +240,10 @@ int main( int argc, char* args[] )
                 switch( event.key.keysym.sym )
                 {
                     case SDLK_ESCAPE: quit = true; break;
+                    case SDLK_1:
+                        background.setInicio(1);
+                        break;
+
                 }
             }
             //If the user has Xed out the window
@@ -226,13 +254,18 @@ int main( int argc, char* args[] )
             }
         }
 
+
+
+
         SDL_Rect offset;
         offset.x = 0;
         offset.y = 0;
 
-        SDL_BlitSurface( game_over, NULL, screen, &offset );
+     SDL_BlitSurface( game_over, NULL, screen, &offset );
 
-        frameCap();
+       frameCap();
+
+
 
         //Update the screen
         if( SDL_Flip( screen ) == -1 )
@@ -246,3 +279,4 @@ int main( int argc, char* args[] )
     return 0;
 }
 }
+

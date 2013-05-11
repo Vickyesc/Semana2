@@ -83,10 +83,10 @@
 1366189330 /home/turupawn/Projects/CodeBlocks/Progra 3/Ejemplos/SdlRunner/Timer.h
 	"SDL/SDL.h"
 
-1366393826 source:c:\users\dell\documents\github\semana2\background.cpp
+1368163722 source:c:\users\dell\documents\github\semana2\background.cpp
 	"Background.h"
 
-1367962784 c:\users\dell\documents\github\semana2\background.h
+1368163709 c:\users\dell\documents\github\semana2\background.h
 	"SDL/SDL.h"
 	"SDL/SDL_image.h"
 	"SDL/SDL_ttf.h"
@@ -101,7 +101,7 @@
 	"SDL/SDL_ttf.h"
 	<string>
 
-1367990606 source:c:\users\dell\documents\github\semana2\main.cpp
+1368203050 source:c:\users\dell\documents\github\semana2\main.cpp
 	"SDL/SDL.h"
 	"SDL/SDL_image.h"
 	"SDL/SDL_mixer.h"
@@ -112,8 +112,9 @@
 	<string>
 	"Fire.h"
 	"Inicio.h"
+	"Cocodrilo.h"
 
-1367991359 c:\users\dell\documents\github\semana2\player.h
+1368159196 c:\users\dell\documents\github\semana2\player.h
 	"SDL/SDL.h"
 	"SDL/SDL_image.h"
 	"SDL/SDL_ttf.h"
@@ -122,13 +123,13 @@
 1366393826 c:\users\dell\documents\github\semana2\timer.h
 	"SDL/SDL.h"
 
-1366778939 source:c:\users\dell\documents\github\semana2\player.cpp
+1368167225 source:c:\users\dell\documents\github\semana2\player.cpp
 	"Player.h"
 
 1366393826 source:c:\users\dell\documents\github\semana2\timer.cpp
 	"Timer.h"
 
-1367986552 source:c:\users\dell\documents\github\semana2\fire.cpp
+1368164205 source:c:\users\dell\documents\github\semana2\fire.cpp
 	"Fire.h"
 
 1367986400 c:\users\dell\documents\github\semana2\fire.h
@@ -144,4 +145,12 @@
 	"SDL/SDL_image.h"
 	"SDL/SDL_ttf.h"
 	<string>
+
+1368164271 source:c:\users\dell\documents\github\semana2\cocodrilo.cpp
+	"Cocodrilo.h"
+
+1368140805 c:\users\dell\documents\github\semana2\cocodrilo.h
+	<string>
+	"SDL/SDL.h"
+	"SDL/SDL_image.h"
 

@@ -34,6 +34,8 @@
 		</Compiler>
 		<Unit filename="Background.cpp" />
 		<Unit filename="Background.h" />
+		<Unit filename="Cocodrilo.cpp" />
+		<Unit filename="Cocodrilo.h" />
 		<Unit filename="Enemy.cpp" />
 		<Unit filename="Enemy.h" />
 		<Unit filename="Fire.cpp" />

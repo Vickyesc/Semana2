@@ -14,13 +14,18 @@ public:
     int velocity;
     int acceleration;
     int current_frame;
-    SDL_Surface *images[5];
+    SDL_Surface *images[10];
     SDL_Surface *screen;
 
     Player(SDL_Surface *screen);
     void logic();
     void render();
     void jump();
+    void perder();
+    void choco(int x, int y);
+    bool isJump;
+    bool seMurio;
+
     virtual ~Player();
 };
 
